@@ -3,6 +3,7 @@ package org.example.model;
 import java.util.Objects;
 
 public class User {
+
     private String userId;
     private String name;
 
@@ -13,6 +14,15 @@ public class User {
 
     public boolean equalsUser(User user) {
         return this.equals(user);
+    }
+
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
